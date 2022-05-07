@@ -1,4 +1,4 @@
-package day44_InterfaceIntro.AnimalTask;
+package day44_InterfaceIntro.day44_InterfaceIntro.AnimalTask;
 
 
 /*
@@ -86,6 +86,8 @@ public abstract class Animal {
     }
 
     public  abstract void eat();
+
+
 
 
     @Override

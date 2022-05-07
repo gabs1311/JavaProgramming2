@@ -1,6 +1,6 @@
-package day44_InterfaceIntro.AnimalTask;
+package day44_InterfaceIntro.day44_InterfaceIntro.AnimalTask;
 
-public class Cat extends Animal{
+public final class Cat extends Animal implements  Playable{
 
     public Cat(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
@@ -15,5 +15,10 @@ public class Cat extends Animal{
     public void eat() {
         System.out.println(getName()+ "is eating a mouse");
 
+    }
+
+    @Override
+    public void play() {
+        System.out.println(getName()+ " plays with the mouse");
     }
 }
