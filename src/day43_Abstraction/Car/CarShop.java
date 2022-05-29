@@ -7,29 +7,34 @@ public class CarShop {
 
  // I cannot create object from the Abstract class, because the abstract class is not concrete
 
-Honda honda  = new Honda("Accord","yellow",2015,25000);
-Audi audi = new Audi("A6", "grey",2019,65000);
-Tesla tesla= new Tesla("model 13", "blue",2020,75000);
+//    Car car1 = new Car("Cydeo", "25", "Blue", 2022, 100000);
+        // we can not create object from Abstract class, because abstract class is not concrete
 
+
+        Honda honda = new Honda("Accord", "Black", 2019, 30000);
+
+        Audi audi = new Audi("Q7", "Blue", 2020, 45000);
+
+        Tesla tesla = new Tesla("Model3", "White", 2021, 60000);
 
         System.out.println(honda);
         System.out.println(audi);
         System.out.println(tesla);
 
+        System.out.println("------------------------------------");
 
-        honda.start();
-        honda.stop();
-        audi.start();
-        audi.autoPark();
-        tesla.voiceCommand();
-        tesla.start();
-        tesla.stop();
+        honda.setColor("Red");
+        audi.setColor("Pink");
+        tesla.setColor("Green");
 
-audi.setColor("white");
-honda.setPrice(37500);
-            System.out.println(honda);
-            System.out.println(audi);
-            System.out.println(tesla);
+        honda.setPrice(25000);
+        audi.setPrice(40000);
+        tesla.setPrice(55000);
+
+        System.out.println(honda);
+        System.out.println(audi);
+        System.out.println(tesla);
+
 
     }
 }
