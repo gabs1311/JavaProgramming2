@@ -28,7 +28,7 @@ public abstract class Animal {
     public Animal(String name, String breed, char gender, int age, String size, String color) {
      setName(name);
         this.breed = breed;
-        if (!(gender=='f'|| gender=='m')){
+        if (!(gender=='F'|| gender=='M')){
             throw new RuntimeException(" Invalid gender: "+ gender);
         }
         this.gender = gender;
