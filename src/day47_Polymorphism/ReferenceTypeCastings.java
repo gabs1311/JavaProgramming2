@@ -1,5 +1,8 @@
 package day47_Polymorphism;
 
+import day43_Abstraction.EmployeeTask.Employee;
+import day43_Abstraction.EmployeeTask.Person;
+import day43_Abstraction.EmployeeTask.Tester;
 import day44_InterfaceIntro.AnimalTask.Animal;
 import day44_InterfaceIntro.AnimalTask.Cat;
 import day44_InterfaceIntro.AnimalTask.Dog;
@@ -42,7 +45,29 @@ public class ReferenceTypeCastings {
         //Cat cat = (Cat) animal2;// if I want to reuse it, I reassign it to a variable
 
         ((Cat) animal2).meaw();// if it is a one time use
+       // ((Dog) animal2).bark(); it will give ClassCastException, because there is no Is a relation between dog and cat
 
+
+        System.out.println("--------------------------------");
+
+       Employee employee = new Tester("Ali",30,'M',42,"SDET",145000.00);
+        ((Tester)employee).bugReport();
+
+        //  ( (Tester)employee ).unitTest();
+
+        //  ( (Developer)employee ).unitTest();
+
+        //  Driver driver = (Driver) employee;  // line 1
+        Person person = (Person) employee; // line 2
+        //    Teacher teacher = (Teacher) employee; // line 3
+
+        System.out.println("----------------------------------------------------");
+
+        Shape s1 = new Circle(10);
+        s1.area();
+        s1.perimeter();
+
+        //  ( (Cube)s1 ).volume();
 
 
 
