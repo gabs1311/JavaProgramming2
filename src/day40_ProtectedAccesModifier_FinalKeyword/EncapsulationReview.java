@@ -1,6 +1,6 @@
 package day40_ProtectedAccesModifier_FinalKeyword;
 
-import day39_EncapsulationAndInheritancePractice.Shape.Circle;
+import day29_ArrayList_Collections.day39_EncapsulationAndInheritancePractice.Shape.Circle;
 
 public class EncapsulationReview {
 

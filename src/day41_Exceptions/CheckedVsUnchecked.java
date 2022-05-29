@@ -1,8 +1,6 @@
 package day41_Exceptions;
 
-import day39_EncapsulationAndInheritancePractice.CydeoTask.Student;
-
-import java.io.FileInputStream;
+import day29_ArrayList_Collections.day39_EncapsulationAndInheritancePractice.CydeoTask.Student;
 
 public class CheckedVsUnchecked {
 

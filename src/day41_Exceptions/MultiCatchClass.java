@@ -1,6 +1,6 @@
 package day41_Exceptions;
 
-import day39_EncapsulationAndInheritancePractice.CydeoTask.Employee;
+import day29_ArrayList_Collections.day39_EncapsulationAndInheritancePractice.CydeoTask.Employee;
 
 public class MultiCatchClass {
 
