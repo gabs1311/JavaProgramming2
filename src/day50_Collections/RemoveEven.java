@@ -1,6 +1,7 @@
 package day50_Collections;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -9,8 +10,20 @@ public class RemoveEven {
 
         Set<Integer>set = new LinkedHashSet<>(Arrays.asList(1,2,3,4,5,6,100, 90, 80, 75, 45, 35, 25, 15));
 
+        // how do I remove all the even numbers
+
+   // set.removeIf(p->p% 2==0);
+        // the following is to use if we cannot use the lambd   a expressions
+
+        Iterator<Integer> it= set.iterator();
+        while (it.hasNext()){
+            if (it.next()%2==0){
+                it.remove();
+            }
+        }
 
 
+        System.out.println(set);
 
 
 
