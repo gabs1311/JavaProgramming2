@@ -33,13 +33,36 @@ public class MapPractice1 {
         }*/
 
 
-        // another method is to iterate it by each entry
+        // another method is to iterate it by each entry, key and value both. Iteration by the pairs is always best
+        //because it contains the keys and the value both
+
+        for (Map.Entry<String, String> entry : employeeMap.entrySet()) {
+          if (entry.getValue().equalsIgnoreCase("m")){
+            //  entry.setValue("Male");
+              employeeMap.replace(entry.getKey(),"Male" );
+          }
+            if (entry.getValue().equalsIgnoreCase("f")){
+                //  entry.setValue("Male");
+                employeeMap.replace(entry.getKey(),"Female" );
+            }
+
+            System.out.println(entry);
+        }
+
+
 
 
         System.out.println(employeeMap);
-
+        System.out.println("=======================================================");
         //  2. Display the names of all female employees
-
+        for (Map.Entry<String, String> eachPair : employeeMap.entrySet()) {
+            String eachKey = eachPair.getKey();
+            String eachValue = eachPair.getValue();
+            if (eachValue.equals("Female")){
+                System.out.println(eachKey);
+            }
+            
+        }
         
     }
 }
