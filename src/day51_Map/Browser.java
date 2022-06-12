@@ -1,7 +1,7 @@
 package day51_Map;
 
 public enum Browser {
-    CHROM,
+    CHROME,
     FIREFOX,
     OPERA,
     EDGE,
