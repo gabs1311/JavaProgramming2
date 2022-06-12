@@ -21,6 +21,7 @@ public class MapPractice3 {
         // displays the names of all employees who have the maximum salaries
 
 /*
+// I sue this loop if I am not allowed to use map.values from Collection - below
         int maxSalary = Integer.MIN_VALUE;
 
        for (Integer eachValue : map.values()) {
