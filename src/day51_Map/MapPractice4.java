@@ -41,11 +41,11 @@ public class MapPractice4 {
         }
         */
 
-        System.out.println(groups.get(2).get(1));
+        System.out.println(groups.get(2).get(1));// print 2nd name from 2nd group
 
 
         System.out.println("------------------------------------------------");
-
+    // print all the students name in seperate lines
         for (ArrayList<String> eachGroup : groups.values()) {
             for (String eachName : eachGroup) {
                 System.out.println(eachName);
