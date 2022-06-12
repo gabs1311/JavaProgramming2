@@ -34,6 +34,14 @@ mapOfMaps.put(map1, map2);
                 
             }
         }
+        System.out.println("------------------------------------------------");
+
+        System.out.println( mapOfMaps.get(map1).get("Veronica") );
+
+        System.out.println("------------------------------------------------");
+
+
+        Map< Map<Map<Integer, Integer>, Map<Integer, Integer>>,  Map<Map<Integer, Integer>, Map<Integer, Integer>> > mapOfMapOfMap = new LinkedHashMap<>();
 
 
     }
