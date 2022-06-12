@@ -1,5 +1,6 @@
 package day51_Map;
 
+import java.sql.SQLOutput;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -22,6 +23,25 @@ public class MapPractice2 {
         map.put("Steven", 135000);
 
         //  1 who has the maximum and minimum salary?
+
+    String name1 = "";
+    String name2 = "";
+    int maxSalary = Integer.MIN_VALUE;
+    int minSalary = Integer.MAX_VALUE;
+        for (Map.Entry<String, Integer> pair : map.entrySet()) {
+         String eachKey = pair.getKey();
+        Integer eachValue = pair.getValue();
+        if (eachValue>maxSalary){
+            maxSalary=eachValue;
+            name1 = eachKey;
+        }
+        if (eachValue<minSalary){
+            minSalary=eachValue;
+            name2 = eachKey;
+        }
+        }
+        System.out.println(name1);
+        System.out.println(name2);
 
         //how many employees has the salary between 120k ~ 150K?
         //   1.4 display the names of the employees who are making less than 118k?
