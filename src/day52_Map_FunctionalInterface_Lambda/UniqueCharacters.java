@@ -27,8 +27,8 @@ public class UniqueCharacters {
                 result.put(each, 1);// under these conditions, the frequency is always 1
             }
         }
-        
 
+        System.out.println(result);
 
 
 
